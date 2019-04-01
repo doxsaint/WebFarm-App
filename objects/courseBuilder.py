@@ -3,7 +3,7 @@
 '''
 import sys
 sys.path.insert(0, '/home/projects/WebFarm-App/webscraping')
-import websocScrape
+from websocScrape import pull_listings
 
 class CourseMeeting:
     def __init__(self, time_start: 'time', time_end: 'time', quarter: str, days: str, location: str):
@@ -14,9 +14,10 @@ class CourseMeeting:
         self.location = location
 
 class Course:
-    def __init__(self, department, course_number):
+    def __init__(self, department, course_number, title):
         self.course_number = course_number
         self.department = department
+        self.title = title
         self.meetings = []
 
     def add_listing(self, meeting: CourseMeeting):
@@ -26,4 +27,5 @@ class Course:
         return meetings
 
 if __name__ == '__main__':
-    assert(1==1)
+    results = pull_listings('COMPSCI', course_number = '143')
+    

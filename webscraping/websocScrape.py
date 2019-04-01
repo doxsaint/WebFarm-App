@@ -71,7 +71,7 @@ def pull_listings(department: str, course_number = None):
     current quarter within a department
     Pulls class information and headers for a course (or all courses if
     course_number is not provided) followed by each course listing'''
-    html = get_raw_listings(department, course)
+    html = get_raw_listings(department, course_number)
     visible = visibleText.text_from_html(html.text)
     trimmed = trim_results(visible)
     return format_results(trimmed)
