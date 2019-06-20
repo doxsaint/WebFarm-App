@@ -5,10 +5,10 @@ WebFarm is an web application that helps UCI students enroll in courses.
 
 ### webscraping
 
-UCI catalog
-Course and degree requirements
-Past and present courses
++UCI catalog and school-specific major listings.
++Course and degree requirements
++Past, present, and (when available) future courses to develop trends.
 
 ### GUI - Qt
 	
-graphing utility to display course availabilities by quarter.	
++graphing utility to display course availabilities by quarter.
