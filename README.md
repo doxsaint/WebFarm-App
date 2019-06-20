@@ -1,9 +1,5 @@
 WebFarm is an web application that helps UCI students enroll in courses.
 
-webscraping
-WebSoC
-Current courses
-
 Roadmap:
 	/webscraping
 		UCI catalog
